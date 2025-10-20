@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
-import Home from './screens/Home'
-import Welcome from './screens/Welcome'
+import Home from './screens/Home.tsx'
+import Welcome from './screens/Welcome.tsx'
 
 function App() {
   return (
