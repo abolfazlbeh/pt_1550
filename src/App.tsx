@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Home from './screens/Home.tsx'
 import Welcome from './features/wallet-setup/screens/Welcome.tsx'
 import Explainer from './features/wallet-setup/screens/Explainer.tsx'
+import RevealSeed from './features/wallet-setup/screens/RevealSeed.tsx'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/wallet-setup/explainer" element={<Explainer />} />
+        <Route path="/wallet-setup/reveal-seed" element={<RevealSeed />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>

@@ -30,3 +30,8 @@ export {
 
 // Utils
 export * from "./utils";
+
+// Screens
+export { default as WelcomeScreen } from "./screens/Welcome";
+export { default as ExplainerScreen } from "./screens/Explainer";
+export { default as RevealSeedScreen } from "./screens/RevealSeed";
