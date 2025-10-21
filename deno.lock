@@ -12,6 +12,7 @@
     "npm:eslint@^9.36.0": "9.36.0",
     "npm:framer-motion@^11.15.0": "11.18.2_react@19.1.1_react-dom@19.1.1__react@19.1.1",
     "npm:globals@^16.4.0": "16.4.0",
+    "npm:lucide-react@0.454": "0.454.0_react@19.1.1",
     "npm:react-dom@*": "19.1.1_react@19.1.1",
     "npm:react-dom@^19.1.1": "19.1.1_react@19.1.1",
     "npm:react-router-dom@^6.22.0": "6.30.1_react@19.1.1_react-dom@19.1.1__react@19.1.1",
@@ -3517,6 +3518,12 @@
         "yallist"
       ]
     },
+    "lucide-react@0.454.0_react@19.1.1": {
+      "integrity": "sha512-hw7zMDwykCLnEzgncEEjHeA6+45aeEzRYuKHuyRSOPkhko+J3ySGjGIzu+mmMfDFG1vazHepMaYFYHbTFAZAAQ==",
+      "dependencies": [
+        "react"
+      ]
+    },
     "merge2@1.4.1": {
       "integrity": "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg=="
     },
@@ -4102,6 +4109,7 @@
       "npm:@vitejs/plugin-react@^5.0.3",
       "npm:autoprefixer@^10.4.17",
       "npm:framer-motion@^11.15.0",
+      "npm:lucide-react@0.454",
       "npm:react-dom@*",
       "npm:react-dom@^19.1.1",
       "npm:react-router-dom@^6.22.0",

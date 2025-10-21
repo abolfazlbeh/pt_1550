@@ -11,7 +11,7 @@
 - [x] **Task 1: Setup Project & Mock Data** ✅  
   Install dependencies (framer-motion, lucide-react), create folder structure (`/src/features/wallet-setup/screens`, `/components`, `/mocks`), and create mock seed phrases & wallet data files.
 
-- [ ] **Task 2: Build Welcome & Explainer Screens**  
+- [x] **Task 2: Build Welcome & Explainer Screens** ✅  
   Create Welcome screen with "Create Wallet" and "Restore Wallet" buttons, then build Explainer screen with a 3-card carousel explaining wallet security basics.
 
 - [ ] **Task 3: Build Reveal Seed Screen**  
