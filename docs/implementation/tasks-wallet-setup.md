@@ -14,7 +14,7 @@
 - [x] **Task 2: Build Welcome & Explainer Screens** ✅  
   Create Welcome screen with "Create Wallet" and "Restore Wallet" buttons, then build Explainer screen with a 3-card carousel explaining wallet security basics.
 
-- [ ] **Task 3: Build Reveal Seed Screen**  
+- [x] **Task 3: Build Reveal Seed Screen** ✅  
   Create screen with "hold-to-reveal" button (3-second press), display 12 mock seed words in a numbered grid, add warning message, and "I've written it down" checkbox.
 
 - [ ] **Task 4: Build Write-Down Tips Screen**  
