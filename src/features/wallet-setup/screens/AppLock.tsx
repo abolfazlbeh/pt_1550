@@ -162,7 +162,7 @@ export default function AppLock() {
                 {Array.from({ length: PIN_LENGTH }).map((_, index) => (
                   <motion.input
                     key={`${step}-${index}`}
-                    ref={(el) => {
+                    ref={(el: HTMLInputElement | null) => {
                       if (step === "create") {
                         createPinRefs.current[index] = el;
                       } else {
@@ -173,8 +173,8 @@ export default function AppLock() {
                     inputMode="numeric"
                     maxLength={1}
                     value={currentPin[index] || ""}
-                    onChange={(e) => handlePinChange(index, e.target.value)}
-                    onKeyDown={(e) => handleKeyDown(index, e)}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => handlePinChange(index, e.target.value)}
+                    onKeyDown={(e: React.KeyboardEvent<HTMLInputElement>) => handleKeyDown(index, e)}
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{
                       opacity: 1,
