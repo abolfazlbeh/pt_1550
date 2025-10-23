@@ -38,3 +38,4 @@ export { default as PreRevealTipsScreen } from "./screens/PreRevealTips";
 export { default as RevealSeedScreen } from "./screens/RevealSeed";
 export { default as PostRevealChecklistScreen } from "./screens/PostRevealChecklist";
 export { default as SeedConfirmationScreen } from "./screens/SeedConfirmation";
+export { default as AppLockScreen } from "./screens/AppLock";
