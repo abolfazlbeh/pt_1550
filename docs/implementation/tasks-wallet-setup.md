@@ -23,7 +23,7 @@
 - [x] **Task 5: Build Post-Reveal Checklist Screen** ✅  
   Create screen reinforcing security best practices after reveal: backup verification checklist (written on paper, stored safely, no digital copies), with continue button.
 
-- [ ] **Task 6: Build Seed Confirmation Screen**  
+- [x] **Task 6: Build Seed Confirmation Screen** ✅  
   Create screen that randomly asks user to confirm 3 words from their seed phrase (e.g., "What is word #3, #7, #11?") with input fields and validation feedback.
 
 - [ ] **Task 7: Build App Lock Screen**  
