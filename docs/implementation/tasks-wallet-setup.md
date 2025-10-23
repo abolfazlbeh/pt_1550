@@ -26,7 +26,7 @@
 - [x] **Task 6: Build Seed Confirmation Screen** ✅  
   Create screen that randomly asks user to confirm 3 words from their seed phrase (e.g., "What is word #3, #7, #11?") with input fields and validation feedback.
 
-- [ ] **Task 7: Build App Lock Screen**  
+- [x] **Task 7: Build App Lock Screen** ✅  
   Create screen for PIN setup with two 6-digit input fields (create + confirm PIN), add visual biometric toggle option, and validation for PIN match.
 
 - [ ] **Task 8: Build Success Screen**  

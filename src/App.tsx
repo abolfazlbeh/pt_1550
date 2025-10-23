@@ -6,6 +6,7 @@ import PreRevealTips from './features/wallet-setup/screens/PreRevealTips.tsx'
 import RevealSeed from './features/wallet-setup/screens/RevealSeed.tsx'
 import PostRevealChecklist from './features/wallet-setup/screens/PostRevealChecklist.tsx'
 import SeedConfirmation from './features/wallet-setup/screens/SeedConfirmation.tsx'
+import AppLock from './features/wallet-setup/screens/AppLock.tsx'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/wallet-setup/reveal-seed" element={<RevealSeed />} />
         <Route path="/wallet-setup/post-reveal-checklist" element={<PostRevealChecklist />} />
         <Route path="/wallet-setup/confirmation" element={<SeedConfirmation />} />
+        <Route path="/wallet-setup/app-lock" element={<AppLock />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
