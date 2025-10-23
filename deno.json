@@ -1,9 +1,9 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --allow-read --allow-env --allow-sys npm:vite",
-    "build": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys npm:typescript/tsc -b && deno run --allow-net --allow-read --allow-write --allow-env --allow-sys npm:vite build",
-    "lint": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys npm:eslint .",
-    "preview": "deno run --allow-net --allow-read --allow-env --allow-sys npm:vite preview"
+    "dev": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:vite",
+    "build": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:typescript/tsc -b && deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:vite build",
+    "lint": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:eslint .",
+    "preview": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:vite preview"
   },
   "imports": {
     "react": "npm:react@^19.1.1",
