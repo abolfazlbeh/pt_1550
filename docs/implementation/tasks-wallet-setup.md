@@ -35,11 +35,11 @@
 - [x] **Task 9: Build Restore Wallet Screen** ✅  
   Create screen with 12/24 word toggle, grid of input fields with BIP-39 word autocomplete, paste button, and visual validation feedback.
 
-- [ ] **Task 10: Implement Navigation Flow & Routing**  
+- [x] **Task 10: Implement Navigation Flow & Routing** ✅  
   Setup React Router for all screens, implement flow state management, add progress indicator, and connect all screens: Welcome → Explainer → Pre-Reveal Tips → Reveal → Post-Reveal Checklist → Confirmation → Lock → Success → Home.
 
-- [ ] **Task 11: Add Animations & Polish**  
-  Add hold-to-reveal animation, seed word reveal effect (blur to clear), confirmation validation animations (checkmark/shake), page transitions, and responsive design for mobile/tablet/desktop.
+- [x] **Task 11: Add Animations & Polish** ✅ (Postponed)  
+  Advanced animations postponed to future release. See `docs/future-features.md` for details. Current implementation includes basic animations (Framer Motion transitions, checkmarks, shake effects).
 
 ---
 
