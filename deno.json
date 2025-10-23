@@ -1,9 +1,9 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --allow-read --allow-env --allow-sys npm:vite",
-    "build": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys npm:typescript/tsc -b && deno run --allow-net --allow-read --allow-write --allow-env --allow-sys npm:vite build",
-    "lint": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys npm:eslint .",
-    "preview": "deno run --allow-net --allow-read --allow-env --allow-sys npm:vite preview"
+    "dev": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:vite",
+    "build": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:typescript/tsc -b && deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:vite build",
+    "lint": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:eslint .",
+    "preview": "deno run --allow-net --allow-read --allow-write --allow-env --allow-sys --allow-ffi --allow-run npm:vite preview"
   },
   "imports": {
     "react": "npm:react@^19.1.1",
@@ -11,7 +11,13 @@
     "react/": "npm:react/",
     "react-dom/": "npm:react-dom/",
     "@vitejs/plugin-react": "npm:@vitejs/plugin-react@^5.0.3",
-    "vite": "npm:vite@^7.1.7"
+    "vite": "npm:vite@^7.1.7",
+    "@heroui/react": "npm:@heroui/react@^2.8.4",
+    "framer-motion": "npm:framer-motion@^11.15.0",
+    "lucide-react": "npm:lucide-react@^0.454.0",
+    "tailwindcss": "npm:tailwindcss@^3.4.1",
+    "autoprefixer": "npm:autoprefixer@^10.4.17",
+    "react-router-dom": "npm:react-router-dom@^6.22.0"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
