@@ -15,3 +15,14 @@ Allow users to choose the language for their recovery phrase generation (e.g., E
 
 ### 3. Optional Passphrase for Seed Generation
 Provide users with the option to set an additional passphrase (BIP-39 extension) for enhanced security during seed generation.
+
+### 4. Advanced Animations & Polish
+Enhanced animations and visual polish for the wallet setup flow:
+- Additional hold-to-reveal animation effects
+- Enhanced seed word reveal effect (blur to clear transitions)
+- Advanced confirmation validation animations (smooth checkmark/shake effects)
+- Page transition animations between screens
+- Comprehensive responsive design optimization for mobile/tablet/desktop
+- Micro-interactions and haptic feedback
+- Loading state animations
+- Skeleton screens for better perceived performance
