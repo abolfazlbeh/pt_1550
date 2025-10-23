@@ -11,7 +11,6 @@ export default function AppLock() {
   const [step, setStep] = useState<"create" | "confirm">("create");
   const [createPin, setCreatePin] = useState<string>("");
   const [confirmPin, setConfirmPin] = useState<string>("");
-  const [biometricEnabled, setBiometricEnabled] = useState(true);
   const [error, setError] = useState<string>("");
   const [showSuccess, setShowSuccess] = useState(false);
 
@@ -224,7 +223,7 @@ export default function AppLock() {
                 )}
               </AnimatePresence>
 
-              {/* Biometric Option - Only show in create step */}
+              {/* Biometric Option - Disabled (Coming Soon) */}
               {step === "create" && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
@@ -232,31 +231,27 @@ export default function AppLock() {
                   transition={{ delay: 0.3 }}
                   className="w-full mt-8"
                 >
-                  <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-5">
-                    <label className="flex items-center justify-between cursor-pointer">
+                  <div className="bg-gray-50 border-2 border-gray-200 rounded-xl p-5 opacity-60">
+                    <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
-                        <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                          <Fingerprint className="w-6 h-6 text-blue-600" strokeWidth={2.5} />
+                        <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                          <Fingerprint className="w-6 h-6 text-gray-400" strokeWidth={2.5} />
                         </div>
                         <div className="flex-1">
-                          <h3 className="font-semibold text-gray-900 text-base mb-1">
-                            Enable Biometric Login
-                          </h3>
-                          <p className="text-gray-600 text-xs leading-relaxed">
-                            Use Face ID or Touch ID for quick access
+                          <div className="flex items-center gap-2 mb-1">
+                            <h3 className="font-semibold text-gray-500 text-base">
+                              Biometric Login
+                            </h3>
+                            <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                              Coming Soon
+                            </span>
+                          </div>
+                          <p className="text-gray-500 text-xs leading-relaxed">
+                            Face ID and Touch ID will be available in a future update
                           </p>
                         </div>
                       </div>
-                      <div className="relative">
-                        <input
-                          type="checkbox"
-                          checked={biometricEnabled}
-                          onChange={(e) => setBiometricEnabled(e.target.checked)}
-                          className="sr-only peer"
-                        />
-                        <div className="w-11 h-6 bg-gray-300 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
-                      </div>
-                    </label>
+                    </div>
                   </div>
                 </motion.div>
               )}
@@ -307,9 +302,7 @@ export default function AppLock() {
                       Security Enabled
                     </h3>
                     <p className="text-green-800 text-xs leading-relaxed">
-                      {biometricEnabled
-                        ? "Biometric authentication is enabled. You can use Face ID or Touch ID to unlock your wallet."
-                        : "Your wallet is protected with your 6-digit PIN."}
+                      Your wallet is now protected with your 6-digit PIN. You'll need to enter it each time you access your wallet.
                     </p>
                   </div>
                 </div>
