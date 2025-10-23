@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { Wallet, Plus, Download } from "lucide-react";
+import { Wallet } from "lucide-react";
 
 export default function Welcome() {
   const navigate = useNavigate();
