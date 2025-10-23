@@ -131,43 +131,74 @@ export default function RevealSeed() {
         <div className="w-full mb-6">
           {!isRevealed ? (
             <motion.div className="flex flex-col items-center">
-              <button
+              <div
                 onMouseDown={startHold}
                 onMouseUp={stopHold}
                 onMouseLeave={stopHold}
-                onTouchStart={startHold}
+                onTouchStart={(e) => {
+                  e.preventDefault();
+                  startHold();
+                }}
                 onTouchEnd={stopHold}
-                className="relative w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 shadow-lg flex items-center justify-center active:scale-95 transition-transform"
+                onContextMenu={(e) => e.preventDefault()}
+                className="relative w-full cursor-pointer select-none"
+                style={{ WebkitUserSelect: 'none', WebkitTouchCallout: 'none' }}
               >
-                {/* Progress Ring */}
-                <svg className="absolute inset-0 w-full h-full -rotate-90">
-                  <circle
-                    cx="64"
-                    cy="64"
-                    r="58"
-                    fill="none"
-                    stroke="rgba(255, 255, 255, 0.2)"
-                    strokeWidth="8"
-                  />
-                  <motion.circle
-                    cx="64"
-                    cy="64"
-                    r="58"
-                    fill="none"
-                    stroke="white"
-                    strokeWidth="8"
-                    strokeLinecap="round"
-                    strokeDasharray={2 * Math.PI * 58}
-                    strokeDashoffset={
-                      2 * Math.PI * 58 - (holdProgress / 100) * 2 * Math.PI * 58
-                    }
-                    style={{ transition: isHolding ? "none" : "all 0.2s" }}
-                  />
-                </svg>
+                {/* Blurred Seed Card */}
+                <div className="bg-gray-50 border-2 border-gray-200 rounded-2xl p-6">
+                  <div className="grid grid-cols-3 gap-3">
+                    {seedPhrase.map((word, index) => (
+                      <div
+                        key={index}
+                        className="bg-white border border-gray-300 rounded-lg p-3 flex items-center gap-3 blur-md"
+                      >
+                        <span className="text-xs font-medium text-gray-400 w-5">
+                          {index + 1}.
+                        </span>
+                        <span className="font-mono font-medium text-gray-900">
+                          {word}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
 
-                {/* Icon */}
-                <Eye className="w-12 h-12 text-white relative z-10" />
-              </button>
+                {/* Overlay with Eye Icon and Progress */}
+                <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-2xl">
+                  <div className="relative flex flex-col items-center">
+                    {/* Progress Ring */}
+                    <svg className="w-24 h-24 -rotate-90">
+                      <circle
+                        cx="48"
+                        cy="48"
+                        r="44"
+                        fill="none"
+                        stroke="rgba(59, 130, 246, 0.2)"
+                        strokeWidth="4"
+                      />
+                      <motion.circle
+                        cx="48"
+                        cy="48"
+                        r="44"
+                        fill="none"
+                        stroke="rgb(59, 130, 246)"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                        strokeDasharray={2 * Math.PI * 44}
+                        strokeDashoffset={
+                          2 * Math.PI * 44 - (holdProgress / 100) * 2 * Math.PI * 44
+                        }
+                        style={{ transition: isHolding ? "none" : "all 0.2s" }}
+                      />
+                    </svg>
+                    
+                    {/* Eye Icon */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Eye className="w-10 h-10 text-blue-600" strokeWidth={2} />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               <p className="text-sm text-gray-500 mt-4 text-center">
                 {isHolding
@@ -275,7 +306,7 @@ export default function RevealSeed() {
       {/* Progress Indicator */}
       <div className="text-center mt-8">
         <p className="text-xs text-gray-400">
-          Step 2 of 7 • Wallet Creation
+          Step 3 of 8 • Wallet Creation
         </p>
       </div>
     </div>

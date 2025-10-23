@@ -61,11 +61,11 @@ export default function Explainer() {
   };
 
   const handleContinue = () => {
-    navigate(`/wallet-setup/reveal-seed?mode=${mode}`);
+    navigate(`/wallet-setup/pre-reveal-tips?mode=${mode}`);
   };
 
   const handleSkip = () => {
-    navigate(`/wallet-setup/reveal-seed?mode=${mode}`);
+    navigate(`/wallet-setup/pre-reveal-tips?mode=${mode}`);
   };
 
   const onTouchStart = (e: React.TouchEvent) => {
