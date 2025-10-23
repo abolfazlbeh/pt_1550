@@ -20,7 +20,7 @@
 - [x] **Task 4: Build Reveal Seed Screen** ✅  
   Create screen with "hold-to-reveal" button (3-second press), display 12 mock seed words in a numbered grid, add warning message, and "I've written it down" checkbox.
 
-- [ ] **Task 5: Build Post-Reveal Checklist Screen**  
+- [x] **Task 5: Build Post-Reveal Checklist Screen** ✅  
   Create screen reinforcing security best practices after reveal: backup verification checklist (written on paper, stored safely, no digital copies), with continue button.
 
 - [ ] **Task 6: Build Seed Confirmation Screen**  

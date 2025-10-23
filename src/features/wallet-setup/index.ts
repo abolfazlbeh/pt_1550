@@ -36,3 +36,4 @@ export { default as WelcomeScreen } from "./screens/Welcome";
 export { default as ExplainerScreen } from "./screens/Explainer";
 export { default as PreRevealTipsScreen } from "./screens/PreRevealTips";
 export { default as RevealSeedScreen } from "./screens/RevealSeed";
+export { default as PostRevealChecklistScreen } from "./screens/PostRevealChecklist";

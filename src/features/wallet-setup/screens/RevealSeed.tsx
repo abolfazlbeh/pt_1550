@@ -79,7 +79,7 @@ export default function RevealSeed() {
   };
 
   const handleContinue = () => {
-    navigate(`/wallet-setup/write-tips?mode=${mode}`);
+    navigate(`/wallet-setup/post-reveal-checklist?mode=${mode}`);
   };
 
   return (
