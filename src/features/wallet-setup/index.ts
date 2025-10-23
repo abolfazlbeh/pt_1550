@@ -40,3 +40,4 @@ export { default as PostRevealChecklistScreen } from "./screens/PostRevealCheckl
 export { default as SeedConfirmationScreen } from "./screens/SeedConfirmation";
 export { default as AppLockScreen } from "./screens/AppLock";
 export { default as SuccessScreen } from "./screens/Success";
+export { default as RestoreWalletScreen } from "./screens/RestoreWallet";
