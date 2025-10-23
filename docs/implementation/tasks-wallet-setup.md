@@ -32,7 +32,7 @@
 - [x] **Task 8: Build Success Screen** ✅  
   Create success screen with checkmark animation, "Wallet Ready!" message, security setup summary, and "Go to Wallet" button.
 
-- [ ] **Task 9: Build Restore Wallet Screen**  
+- [x] **Task 9: Build Restore Wallet Screen** ✅  
   Create screen with 12/24 word toggle, grid of input fields with BIP-39 word autocomplete, paste button, and visual validation feedback.
 
 - [ ] **Task 10: Implement Navigation Flow & Routing**  
