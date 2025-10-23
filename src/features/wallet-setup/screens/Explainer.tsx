@@ -64,10 +64,6 @@ export default function Explainer() {
     navigate(`/wallet-setup/pre-reveal-tips?mode=${mode}`);
   };
 
-  const handleSkip = () => {
-    navigate(`/wallet-setup/pre-reveal-tips?mode=${mode}`);
-  };
-
   const onTouchStart = (e: React.TouchEvent) => {
     setTouchEnd(0);
     setTouchStart(e.targetTouches[0].clientX);
@@ -190,7 +186,7 @@ export default function Explainer() {
       {/* Progress Indicator */}
       <div className="text-center mt-8">
         <p className="text-xs text-gray-400">
-          Step 1 of 7 • Wallet Creation
+          Step 1 of 8 • Wallet Creation
         </p>
       </div>
     </div>

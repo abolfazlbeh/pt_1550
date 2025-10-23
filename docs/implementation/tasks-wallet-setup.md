@@ -35,7 +35,7 @@
 - [x] **Task 9: Build Restore Wallet Screen** ✅  
   Create screen with 12/24 word toggle, grid of input fields with BIP-39 word autocomplete, paste button, and visual validation feedback.
 
-- [ ] **Task 10: Implement Navigation Flow & Routing**  
+- [x] **Task 10: Implement Navigation Flow & Routing** ✅  
   Setup React Router for all screens, implement flow state management, add progress indicator, and connect all screens: Welcome → Explainer → Pre-Reveal Tips → Reveal → Post-Reveal Checklist → Confirmation → Lock → Success → Home.
 
 - [ ] **Task 11: Add Animations & Polish**  
